@@ -1,0 +1,53 @@
+{
+    "name": "guile",
+    "displayName": "Guile",
+    "publisher": "jeandeaual",
+    "repository": "https://github.com/jeandeaual/vscode-guile",
+    "description": "",
+    "version": "0.1.0",
+    "license": "MIT",
+    "author": {
+        "name": "Alexis Jeandeau"
+    },
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "keywords": [
+        "guile",
+        "scheme",
+        "syntax"
+    ],
+    "extensionDependencies": [
+        "sjhuangx.vscode-scheme"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "guile",
+                "aliases": [
+                    "Guile",
+                    "guile"
+                ],
+                "extensions": [
+                    ".scm",
+                    ".go"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "guile",
+                "scopeName": "source.guile",
+                "path": "./syntaxes/guile.tmLanguage.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "js-yaml": "^4.0.0",
+        "vsce": "^1.85.1"
+    }
+}
