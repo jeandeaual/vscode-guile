@@ -8,7 +8,7 @@
 
 ## Requirements
 
-* [VSCode](https://code.visualstudio.com/) 1.44.0 or newer
+* [VSCode](https://code.visualstudio.com/) 1.0.0 or newer
 
 ## Installation
 
@@ -20,7 +20,6 @@
 
 ```sh
 yarn install
-npx js-yaml syntaxes/guile.tmLanguage.yaml > syntaxes/guile.tmLanguage.json
 npx vsce package
 ```
 

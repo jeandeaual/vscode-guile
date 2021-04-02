@@ -10,7 +10,7 @@
         "name": "Alexis Jeandeau"
     },
     "engines": {
-        "vscode": "^1.44.0"
+        "vscode": "^1.0.0"
     },
     "categories": [
         "Programming Languages"
@@ -48,6 +48,12 @@
     },
     "devDependencies": {
         "js-yaml": "^4.0.0",
+        "markdown-extract": "^1.0.2",
+        "ovsx": "^0.1.0-next.a9154dc",
         "vsce": "^1.85.1"
+    },
+    "scripts": {
+        "vscode:prepublish": "yarn convertMainSyntax",
+        "convertMainSyntax": "npx js-yaml syntaxes/guile.tmLanguage.yaml > syntaxes/guile.tmLanguage.json"
     }
 }
