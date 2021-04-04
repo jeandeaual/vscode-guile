@@ -1,5 +1,7 @@
 # VSCode Guile
 
+[![build](https://github.com/jeandeaual/vscode-guile/workflows/build/badge.svg)](https://github.com/jeandeaual/vscode-guile/actions?query=workflow%3Abuild)
+
 [GNU Guile](https://www.gnu.org/software/guile/) syntax highlighting for VSCode.
 
 ## Features

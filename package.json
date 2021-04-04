@@ -2,8 +2,15 @@
     "name": "guile",
     "displayName": "Guile",
     "publisher": "jeandeaual",
-    "repository": "https://github.com/jeandeaual/vscode-guile",
-    "description": "",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jeandeaual/vscode-guile"
+    },
+    "homepage": "https://github.com/jeandeaual/vscode-guile/blob/master/README.md",
+    "bugs": {
+        "url": "https://github.com/jeandeaual/vscode-guile/issues"
+    },
+    "description": "Adds support for Guile syntax highlighting.",
     "version": "0.1.0",
     "license": "MIT",
     "author": {
@@ -22,6 +29,13 @@
     ],
     "extensionDependencies": [
         "sjhuangx.vscode-scheme"
+    ],
+    "badges": [
+        {
+            "url": "https://github.com/jeandeaual/vscode-guile/workflows/build/badge.svg",
+            "href": "https://github.com/jeandeaual/vscode-guile/actions?query=workflow%3Abuild",
+            "description": "GitHub build status"
+        }
     ],
     "contributes": {
         "languages": [
