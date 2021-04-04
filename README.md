@@ -6,7 +6,7 @@
 
 ## Features
 
-* Guile syntax highlighting, based on [vscode-scheme](https://marketplace.visualstudio.com/items?itemName=sjhuangx.vscode-scheme)
+* Guile syntax highlighting, based on the [Scheme](https://marketplace.visualstudio.com/items?itemName=jeandeaual.scheme) extension
 
 ## Requirements
 
@@ -14,9 +14,8 @@
 
 ## Installation
 
-1. Open the Extensions left panel in VSCode (Windows: Ctrl+Shift+X; MacOS: Cmd+Shift+X)
-2. Type in `Guile` in the search bar
-3. Install the extension, then reload VSCode (Ctrl+R)
+* [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=jeandeaual.guile)
+* [Open VSX Registry](https://open-vsx.org/extension/jeandeaual/guile)
 
 ## Build
 

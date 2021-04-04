@@ -28,7 +28,7 @@
         "syntax"
     ],
     "extensionDependencies": [
-        "sjhuangx.vscode-scheme"
+        "jeandeaual.scheme"
     ],
     "badges": [
         {
