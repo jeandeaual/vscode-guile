@@ -43,7 +43,15 @@
                 "language": "guile",
                 "scopeName": "source.guile",
                 "path": "./syntaxes/guile.tmLanguage.json"
+            },
+            {
+                "scopeName": "markdown.guile.codeblock",
+                "path": "./syntaxes/guile.markdown.tmLanguage.json",
+                "injectTo": [
+                    "text.html.markdown"
+                ]
             }
+
         ]
     },
     "devDependencies": {
@@ -53,7 +61,8 @@
         "vsce": "^1.85.1"
     },
     "scripts": {
-        "vscode:prepublish": "yarn convertMainSyntax",
-        "convertMainSyntax": "npx js-yaml syntaxes/guile.tmLanguage.yaml > syntaxes/guile.tmLanguage.json"
+        "vscode:prepublish": "yarn convertMainSyntax && yarn convertMarkdownSyntax",
+        "convertMainSyntax": "npx js-yaml syntaxes/guile.tmLanguage.yaml > syntaxes/guile.tmLanguage.json",
+        "convertMarkdownSyntax": "npx js-yaml syntaxes/guile.markdown.tmLanguage.yaml > syntaxes/guile.markdown.tmLanguage.json"
     }
 }
