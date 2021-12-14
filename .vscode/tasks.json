@@ -7,7 +7,6 @@
             "label": "Package",
             "type": "shell",
             "command": "npx vsce package",
-            "dependsOn": "YAML to JSON",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -23,13 +22,43 @@
         {
             "label": "YAML to JSON",
             "type": "shell",
-            "command": "npx js-yaml ${workspaceFolder}/syntaxes/guile.tmLanguage.yaml > ${workspaceFolder}/syntaxes/guile.tmLanguage.json",
+            "dependsOn": [
+                "YAML to JSON (Guile syntax)",
+                "YAML to JSON (Guile Markdown syntax)"
+            ],
             "group": "build"
         },
         {
             "label": "JSON to YAML",
             "type": "shell",
+            "dependsOn": [
+                "JSON to YAML (Guile syntax)",
+                "JSON to YAML (Guile Markdown syntax)"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "YAML to JSON (Guile syntax)",
+            "type": "shell",
+            "command": "npx js-yaml ${workspaceFolder}/syntaxes/guile.tmLanguage.yaml > ${workspaceFolder}/syntaxes/guile.tmLanguage.json",
+            "group": "build"
+        },
+        {
+            "label": "JSON to YAML (Guile syntax)",
+            "type": "shell",
             "command": "yq e -P ${workspaceFolder}/syntaxes/guile.tmLanguage.json > ${workspaceFolder}/syntaxes/guile.tmLanguage.yaml",
+            "group": "build"
+        },
+        {
+            "label": "YAML to JSON (Guile Markdown syntax)",
+            "type": "shell",
+            "command": "npx js-yaml ${workspaceFolder}/syntaxes/guile.markdown.tmLanguage.yaml > ${workspaceFolder}/syntaxes/guile.markdown.tmLanguage.json",
+            "group": "build"
+        },
+        {
+            "label": "JSON to YAML (Guile Markdown syntax)",
+            "type": "shell",
+            "command": "yq e -P ${workspaceFolder}/syntaxes/guile.markdown.tmLanguage.json > ${workspaceFolder}/syntaxes/guile.markdown.tmLanguage.yaml",
             "group": "build"
         }
     ]
