@@ -1,4 +1,4 @@
-# VSCode Guile
+# Guile Syntax for Visual Studio Code
 
 [![Visual Studio Marketplace](https://vsmarketplacebadge.apphb.com/version/jeandeaual.guile.svg)](https://marketplace.visualstudio.com/items?itemName=jeandeaual.guile)
 [![build](https://github.com/jeandeaual/vscode-guile/workflows/build/badge.svg)](https://github.com/jeandeaual/vscode-guile/actions?query=workflow%3Abuild)
@@ -22,7 +22,7 @@
 
 ```sh
 yarn install
-npx vsce package
+npx vsce package --yarn
 ```
 
 ## Release Notes
